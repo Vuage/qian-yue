@@ -1,4 +1,4 @@
-# vuage
+# vue-router-record
 
 ## Project setup
 ```
