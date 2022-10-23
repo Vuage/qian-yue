@@ -25,9 +25,8 @@
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>淺月物語</h1>
-								<p>emm <a href="https://qian-yue.tk">nothing now</a> LOL<br />
-								nothing <a href="https://qian-yue.tk">點這裡</a> www.</p>
+								<h1>{{ header.title }}</h1>
+								<div v-html="header.content"></div>
 							</div>
 						</div>
 						<nav>
@@ -64,6 +63,11 @@
 				const App = {
 					data(){
 						return{
+							header: {
+								title: '淺月物語',
+								content: `<p>emm <a href="https://qian-yue.tk">nothing now</a> LOL<br />
+								nothing <a href="https://qian-yue.tk">點這裡</a> www.</p>`
+							},
 							data: [
 								{
 									name: '關於',
