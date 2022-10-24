@@ -1,5 +1,14 @@
 [
     {
+        "version": "1.1",
+        "name": "v1.1 正式版",
+        "closed": true,
+        "description": "新增更新日誌",
+        "changes": [
+            "新增更新日誌"
+        ]
+    },
+    {
         "version": "1.0",
         "name": "v1.0 正式版",
         "closed": true,
