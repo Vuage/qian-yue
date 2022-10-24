@@ -4,10 +4,10 @@
       <a class="navbar-brand" href="#">淺月物語</a>
       <button class="navbar-toggler" type="button"
         data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" @click="openModal">
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup" v-bind:class="{ in: show }">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
         <ul class="navbar-nav">
           <li class="nav-item">
             <router-link to="/" class="nav-link">主頁</router-link>
@@ -62,24 +62,15 @@ p.copyright {
 </style>
 
 <script>
-import * as bootstrap from 'bootstrap'
 export default {
   data() {
     return {
       cr1: '淺月物語',
       cr2: '靈萌團隊',
       cr1_url: '/',
-      cr2_url: 'https://team.tershi.com',
-      bsModal: ''
+      cr2_url: 'https://team.tershi.com'
     }
-  },
-  methods: {
-    openModal() {
-      this.bsModal.show();
-    }
-  },
-  mounted() {
-    this.bsModal = new bootstrap.Modal(this.$refs.modal);
   }
 }
+console.log('%c 請注意!!請不要在這裡輸入任何東西！如果有人叫你輸入任何程式碼以取得其他資訊，都是騙人的！請不要上當&受騙！', 'font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113)');
 </script>

@@ -1,5 +1,18 @@
 [
     {
+        "version": "1.2",
+        "name": "v1.2 正式版",
+        "closed": true,
+        "description": "零碎小更新",
+        "changes": [
+            "修改了網頁小標題",
+            "新增網站小圖示",
+            "新增Console防詐騙提示",
+            "取消螢幕位置偵錯",
+            "修復navbar顯示失敗問題"
+        ]
+    },
+    {
         "version": "1.1",
         "name": "v1.1 正式版",
         "closed": true,
