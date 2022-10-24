@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunktest_project"]=self["webpackChunktest_project"]||[]).push([[978],{978:function(n,t,e){e.r(t),e.d(t,{default:function(){return f}});var r=e(252);const u=(0,r._)("h1",null,"404",-1),c=(0,r._)("p",null,"這頁找不到囉～",-1);function l(n,t){return(0,r.wg)(),(0,r.iD)(r.HY,null,[u,c],64)}var s=e(744);const o={},a=(0,s.Z)(o,[["render",l]]);var f=a}}]);
+//# sourceMappingURL=978.7bffbdec.js.map
