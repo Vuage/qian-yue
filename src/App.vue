@@ -29,7 +29,7 @@
     <router-view/>
   </div>
   <footer>
-    <p class="copyright">&copy Copyright 2022. <a :href="cr1_url">{{ cr1 }}</a>. 技術提供: <a :href="cr2_url">{{ cr2 }}</a></p>
+    <p class="copyright">&copy; Copyright 2022. <a :href="cr1_url">{{ cr1 }}</a>. 技術提供: <a :href="cr2_url">{{ cr2 }}</a></p>
   </footer>
   <!-- <router-link to="/newPage/routerNavigation">/newPage/routerNavigation</router-link> -->
 </template>
@@ -39,7 +39,7 @@ body {
   padding-top: 80px;
   background-image:
     linear-gradient(
-      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
     url(assets/bg.jpg);

@@ -5,7 +5,7 @@ module.exports = {
   },
   extends: [
     'plugin:vue/vue3-essential',
-    '@vue/standard'
+    'standard'
   ],
   parserOptions: {
     parser: '@babel/eslint-parser'
@@ -17,6 +17,6 @@ module.exports = {
     'space-before-function-paren': 'off',
     'vue/multi-word-component-names': 'off',
     "comma-dangle": 0,
-    'semi': 0,
+    'semi': 0
   }
 }
