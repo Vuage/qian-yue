@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunktest_project"]=self["webpackChunktest_project"]||[]).push([[443],{835:function(t,n,e){e.r(n),e.d(n,{default:function(){return p}});var r=e(252);const u={class:"about"},c=(0,r._)("h1",null,"關於淺月物語呢...",-1),s=(0,r._)("p",null,"這裡沒啥好說的~",-1),a=[c,s];function l(t,n){return(0,r.wg)(),(0,r.iD)("div",u,a)}var o=e(744);const f={},i=(0,o.Z)(f,[["render",l]]);var p=i}}]);
+//# sourceMappingURL=about.259ba04a.js.map
