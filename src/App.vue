@@ -15,6 +15,9 @@
           <li class="nav-item">
             <router-link to="/about" class="nav-link">關於我們</router-link>
           </li>
+          <li class="nav-item">
+            <router-link to="/webchangelog" class="nav-link">更新日誌</router-link>
+          </li>
           <li class="nav-item" >
             <router-link class="nav-link"
               :to="{

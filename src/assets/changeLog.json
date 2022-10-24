@@ -1,0 +1,29 @@
+[
+    {
+        "version": "1.0",
+        "name": "v1.0 正式版",
+        "closed": true,
+        "description": "全面更改為 vue cli 框架",
+        "changes": [
+            "改寫成 vue cli",
+            "新增背景",
+            "新增 css",
+            "分離 js css html vue",
+            "新增關於頁面",
+            "新增主頁",
+            "新增其他頁面",
+            "新增 copyright"
+        ]
+    },
+    {
+        "version": "0.1",
+        "name": "v0.1 公測版",
+        "closed": true,
+        "description": "v0.x: 使用 vue.js 非 vue cli",
+        "changes": [
+            "全面使用 Vue.JS 框架開發",
+            "更改 README",
+            "使用 axios 套件"
+        ]
+    }
+]
