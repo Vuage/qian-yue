@@ -1,24 +1,14 @@
-# vue-router-record
+# 淺月官方網站
+一個使用 vue.js 建立的網站。
 
-## Project setup
-```
-npm install
-```
+## 編譯
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+安裝所需依賴: ```npm i```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+編譯: ```npm run build```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## 運行
+本地開啟: ```npm run serve```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 貢獻
+歡迎發 PR！
