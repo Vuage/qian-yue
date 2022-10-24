@@ -1,13 +1,13 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: transparent!important;">
+  <nav ref="modal" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: transparent!important;">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">淺月物語</a>
       <button class="navbar-toggler" type="button"
-        data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" @click="openModal">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup" v-bind:class="{ in: show }">
         <ul class="navbar-nav">
           <li class="nav-item">
             <router-link to="/" class="nav-link">主頁</router-link>
@@ -59,14 +59,24 @@ p.copyright {
 </style>
 
 <script>
+import * as bootstrap from 'bootstrap'
 export default {
   data() {
     return {
       cr1: '淺月物語',
       cr2: '靈萌團隊',
       cr1_url: '/',
-      cr2_url: 'https://team.tershi.com'
-    };
+      cr2_url: 'https://team.tershi.com',
+      bsModal: ''
+    }
+  },
+  methods: {
+    openModal() {
+      this.bsModal.show();
+    }
+  },
+  mounted() {
+    this.bsModal = new bootstrap.Modal(this.$refs.modal);
   }
 }
 </script>
