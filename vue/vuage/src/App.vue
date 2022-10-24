@@ -1,7 +1,7 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: transparent!important;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">淺月物語</a>
       <button class="navbar-toggler" type="button"
         data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,29 +10,63 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link to="/" class="nav-link">Home</router-link>
+            <router-link to="/" class="nav-link">主頁</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/about" class="nav-link">About</router-link>
+            <router-link to="/about" class="nav-link">關於我們</router-link>
           </li>
           <li class="nav-item" >
             <router-link class="nav-link"
               :to="{
                 name: '新增頁面',
-              }">新增頁面</router-link>
+              }">其他頁面</router-link>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="container" style="height: 300vh">
+  <div class="container">
     <router-view/>
   </div>
-  <router-link to="/newPage/routerNavigation">/newPage/routerNavigation</router-link>
+  <footer>
+    <p class="copyright">&copy Copyright 2022. <a :href="cr1_url">{{ cr1 }}</a>. 技術提供: <a :href="cr2_url">{{ cr2 }}</a></p>
+  </footer>
+  <!-- <router-link to="/newPage/routerNavigation">/newPage/routerNavigation</router-link> -->
 </template>
 
 <style lang="scss">
 body {
-  padding-top: 80px
+  padding-top: 80px;
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(assets/bg.jpg);
+  color: white;
+}
+footer {
+  height: 300px;
+  width: 100%;
+}
+p.copyright {
+  width: 100%;
+  line-height: 10px;
+  text-align: center;
+  bottom:0;
+  position: fixed;
 }
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      cr1: '淺月物語',
+      cr2: '靈萌團隊',
+      cr1_url: '/',
+      cr2_url: 'https://team.tershi.com'
+    };
+  }
+}
+</script>
