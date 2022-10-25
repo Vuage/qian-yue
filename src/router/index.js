@@ -24,6 +24,22 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/WebsiteChangeLog.vue'),
   },
   {
+    path: '/developer',
+    name: 'Developer',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Developer.vue'),
+  },
+  {
+    path: '/connectip',
+    name: 'ConnectIP',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/ConnectIP.vue'),
+  },
+  {
     path: '/newpage',
     name: '新增頁面',
     component: () => import('../views/NewPage.vue'),

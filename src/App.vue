@@ -1,5 +1,5 @@
 <template>
-  <nav ref="modal" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: transparent!important;">
+  <nav ref="modal" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: #0000006b!important;">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">淺月物語</a>
       <button class="navbar-toggler" type="button"
@@ -16,7 +16,13 @@
             <router-link to="/about" class="nav-link">關於我們</router-link>
           </li>
           <li class="nav-item">
+            <router-link to="/connectip" class="nav-link">連線位置</router-link>
+          </li>
+          <li class="nav-item">
             <router-link to="/webchangelog" class="nav-link">更新日誌</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/developer" class="nav-link">開發者</router-link>
           </li>
           <li class="nav-item" >
             <router-link class="nav-link"
