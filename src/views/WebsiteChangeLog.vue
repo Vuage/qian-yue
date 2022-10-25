@@ -4,7 +4,7 @@
     <div class="accordion-item" v-for="(item, key) in log" :key="key">
         <h2 class="accordion-header" :id="`log`+item.version">
         <button @click="item.closed = !item.closed" class="accordion-button " :class="{'collapsed':item.closed}" type="button" data-bs-toggle="collapse" :data-bs-target="`#log`+key" aria-expanded="true" :aria-controls="`log`+key">
-            {{ item.name }}
+            {{ item.name }} - {{ item.description }}
         </button>
         </h2>
         <div :id="`log`+key" class="accordion-collapse collapse" :class="{'collapsed':!item.closed}" :aria-labelledby="`log`+item.version" data-bs-parent="#accordionExample">

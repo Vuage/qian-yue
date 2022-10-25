@@ -19,6 +19,9 @@
             <router-link to="/connectip" class="nav-link">連線位置</router-link>
           </li>
           <li class="nav-item">
+            <router-link to="/dcbot" class="nav-link">DC機器人</router-link>
+          </li>
+          <li class="nav-item">
             <router-link to="/webchangelog" class="nav-link">更新日誌</router-link>
           </li>
           <li class="nav-item">

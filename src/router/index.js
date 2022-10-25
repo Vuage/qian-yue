@@ -40,6 +40,40 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/ConnectIP.vue'),
   },
   {
+    path: '/dcbot',
+    name: 'DiscordBot',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/DiscordBot.vue'),
+    children: [
+      {
+        path: 'intro',
+        component: () => import('../views/DiscordBotIntro.vue'),
+      },
+      {
+        path: 'cmd',
+        component: () => import('../views/DiscordBotCmd.vue'),
+      },
+      {
+        path: 'api',
+        component: () => import('../views/DiscordBotApi.vue'),
+      },
+      {
+        path: 'doc',
+        component: () => import('../views/DiscordBotDoc.vue'),
+      },
+      {
+        path: 'log',
+        component: () => import('../views/DiscordBotLog.vue'),
+      },
+      {
+        path: 'dev',
+        component: () => import('../views/DiscordBotDev.vue'),
+      },
+    ],
+  },
+  {
     path: '/newpage',
     name: '新增頁面',
     component: () => import('../views/NewPage.vue'),
