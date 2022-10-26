@@ -50,6 +50,10 @@ body {
     ),
     url(assets/bg.jpg);
   color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 footer {
   height: 300px;
