@@ -1,12 +1,22 @@
 [
     {
+        "version": "1.6",
+        "name": "v1.6 正式版",
+        "closed": true,
+        "date": "2022/10/26",
+        "description": "零碎更新",
+        "// 新增誰更新的" : "",
+        "// 更新日誌和指令寫成同一個component": "",
+        "changes": [
+            "DCBOT 開發者新增 玟珄MinXuan"
+        ]
+    },
+    {
         "version": "1.5",
         "name": "v1.5 正式版",
         "closed": true,
         "date": "2022/10/26",
         "description": "大更新",
-        "// 新增誰更新的" : "",
-        "// 更新日誌和指令寫成同一個component": "",
         "changes": [
             "完善 Discord 指令頁面",
             "將 AccordCmd 元件註冊",

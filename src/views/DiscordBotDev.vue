@@ -34,12 +34,12 @@ export default {
           description: '一個來自臺灣,愛寫程式的新生兒w'
         },
         {
-          name: '',
-          img: '',
-          link: '',
-          yt: '',
-          github: '',
-          description: ''
+          name: '玟珄MinXuan',
+          img: require('@/assets/minxuan.png'),
+          link: 'https://www.minxuan.ga/首頁',
+          yt: 'https://tinyurl.com/y2m2d9vb',
+          github: 'https://github.com/hehe6272',
+          description: '在淺月物語號稱身高180體重87的玟珄MinXuan'
         }
       ]
     }
