@@ -1,0 +1,22 @@
+[
+    {
+      "name": "一般功能",
+      "closed": true,
+      "data": [
+        {
+          "name": "/getUserInfo",
+          "description": "得到 User 的信息",
+          "params": "[user: MEMBER]",
+          "method": "GET/500",
+          "available": false
+        },
+        {
+            "name": "/getBotInfo",
+            "description": "得到 Bot 的信息",
+            "params": "",
+            "method": "GET/500",
+            "available": false
+          }
+      ]
+    }
+  ]

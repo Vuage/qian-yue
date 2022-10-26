@@ -27,12 +27,6 @@
           <li class="nav-item">
             <router-link to="/developer" class="nav-link">開發者</router-link>
           </li>
-          <li class="nav-item" >
-            <router-link class="nav-link"
-              :to="{
-                name: '新增頁面',
-              }">其他頁面</router-link>
-          </li>
         </ul>
       </div>
     </div>

@@ -73,21 +73,6 @@ const routes = [
       },
     ],
   },
-  {
-    path: '/newpage',
-    name: '新增頁面',
-    component: () => import('../views/NewPage.vue'),
-    children: [
-      {
-        path: 'a',
-        component: () => import('../views/ComponentA.vue'),
-      },
-      {
-        path: 'b',
-        component: () => import('../views/ComponentB.vue'),
-      },
-    ],
-  },
   // 404 頁面
   {
     path: '/:pathMatch(.*)*',

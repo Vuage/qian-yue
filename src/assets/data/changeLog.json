@@ -1,8 +1,29 @@
 [
     {
+        "version": "1.5",
+        "name": "v1.5 正式版",
+        "closed": true,
+        "date": "2022/10/26",
+        "description": "大更新",
+        "// 新增誰更新的" : "",
+        "// 更新日誌和指令寫成同一個component": "",
+        "changes": [
+            "完善 Discord 指令頁面",
+            "將 AccordCmd 元件註冊",
+            "將指令頁面變為表格",
+            "將圖片下載至本地",
+            "將 IntroCard 元件註冊",
+            "刪除其他頁面",
+            "更新日誌新增最新版和穩定版",
+            "完善 Discord API 頁面",
+            "完善 Discord 更新日誌頁面"
+        ]
+    },
+    {
         "version": "1.4",
         "name": "v1.4 正式版",
         "closed": true,
+        "date": "2022/10/25",
         "description": "零碎小更新",
         "changes": [
             "刪除舊網站",
@@ -12,10 +33,12 @@
             "新增指令表格",
             "更新日誌新增描述"
         ]
-    },{
+    },
+    {
         "version": "1.3",
         "name": "v1.3 正式版",
         "closed": true,
+        "date": "2022/10/25",
         "description": "零碎小更新",
         "changes": [
             "navbar 顏色變深",
@@ -29,6 +52,7 @@
         "version": "1.2",
         "name": "v1.2 正式版",
         "closed": true,
+        "date": "2022/10/24",
         "description": "零碎小更新",
         "changes": [
             "修改了網頁小標題",
@@ -42,6 +66,7 @@
         "version": "1.1",
         "name": "v1.1 正式版",
         "closed": true,
+        "date": "2022/10/24",
         "description": "新增更新日誌",
         "changes": [
             "新增更新日誌"
@@ -51,6 +76,7 @@
         "version": "1.0",
         "name": "v1.0 正式版",
         "closed": true,
+        "date": "2022/10/24",
         "description": "全面更改為 vue cli 框架",
         "changes": [
             "改寫成 vue cli",
@@ -67,6 +93,7 @@
         "version": "0.1",
         "name": "v0.1 公測版",
         "closed": true,
+        "date": "2022/10/23",
         "description": "v0.x: 使用 vue.js 非 vue cli",
         "changes": [
             "全面使用 Vue.JS 框架開發",
