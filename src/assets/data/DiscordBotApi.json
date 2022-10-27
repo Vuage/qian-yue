@@ -4,7 +4,7 @@
       "closed": true,
       "data": [
         {
-          "name": "/getUserInfo",
+          "name": "/getUserInfo/:user",
           "description": "得到 User 的信息",
           "params": "[user: MEMBER]",
           "method": "GET/500",

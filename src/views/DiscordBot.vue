@@ -3,23 +3,8 @@
   <div class="row">
     <div class="col-4">
       <div class="list-group">
-        <router-link to="/dcbot/intro" class="list-group-item list-group-item-act">
-          介紹
-        </router-link>
-        <router-link to="/dcbot/cmd" class="list-group-item list-group-item-act">
-          指令
-        </router-link>
-        <router-link to="/dcbot/api" class="list-group-item list-group-item-act">
-          API
-        </router-link>
-        <router-link to="/dcbot/doc" class="list-group-item list-group-item-act">
-          文檔
-        </router-link>
-        <router-link to="/dcbot/log" class="list-group-item list-group-item-act">
-          更新日誌
-        </router-link>
-        <router-link to="/dcbot/dev" class="list-group-item list-group-item-act">
-          開發者
+        <router-link v-for="(item, key) in data" :key="key" :to="item.path" class="list-group-item list-group-item-act">
+          {{ item.name }}
         </router-link>
       </div>
     </div>
@@ -29,3 +14,38 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      data: [
+        {
+          name: '介紹',
+          path: '/dcbot/intro'
+        },
+        {
+          name: '指令',
+          path: '/dcbot/cmd'
+        },
+        {
+          name: 'API',
+          path: '/dcbot/api'
+        },
+        {
+          name: '文檔',
+          path: '/dcbot/doc'
+        },
+        {
+          name: '更新日誌',
+          path: '/dcbot/log'
+        },
+        {
+          name: '開發者',
+          path: '/dcbot/dev'
+        }
+      ]
+    }
+  }
+}
+</script>
