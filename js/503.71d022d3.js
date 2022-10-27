@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkqian_yue_web"]=self["webpackChunkqian_yue_web"]||[]).push([[503],{503:function(n,r,e){e.r(r),e.d(r,{default:function(){return c}});var t=e(577);function u(n,r,e,u,a,i){return(0,t.zw)(a.intro)}var a={name:"DiscordBotIntro",data(){return{intro:"關於淺月物語機器人呢，恩...沒啥好介紹的"}}},i=e(744);const o=(0,i.Z)(a,[["render",u]]);var c=o}}]);
-//# sourceMappingURL=503.71d022d3.js.map

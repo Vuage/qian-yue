@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkqian_yue_web"]=self["webpackChunkqian_yue_web"]||[]).push([[978],{978:function(n,u,e){e.r(u),e.d(u,{default:function(){return f}});var r=e(252);const t=(0,r._)("h1",null,"404",-1),l=(0,r._)("p",null,"這頁找不到囉～",-1);function a(n,u){return(0,r.wg)(),(0,r.iD)(r.HY,null,[t,l],64)}var c=e(744);const i={},s=(0,c.Z)(i,[["render",a]]);var f=s}}]);
-//# sourceMappingURL=978.6ecc963d.js.map
