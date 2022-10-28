@@ -9,92 +9,56 @@
       <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title text-dark">{{ item.title }}</h5>
-          <p class="card-text text-dark"> {{ item.short_content }} </p>
-          <button type="button" class="btn btn-primary">展開</button>
+          <hr class="text-dark">
+          <p class="text-dark">{{ item.short_content }}</p>
+          <p class="text-dark alert alert-primary">
+            發文時間: {{ item.date }} <br>
+            發文者: {{ item.author }}
+          </p>
+          <button type="button" class="btn btn-primary" @click="showPost(key)">展開</button>
         </div>
       </div>
     </div>
   </div>
+  <!-- <div v-for="(item, key) in searchPost" :key="key">
+    {{ item }} -->
+    <PostModal :data="post" ref="PostModal"></PostModal>
+  <!-- </div> -->
 </template>
 
 <script>
+import PostModal from '@/components/PostModal.vue'
+import json from '@/assets/data/Post.json'
 export default {
+  components: {
+    PostModal
+  },
   data() {
     return {
       cacheSearch: '',
       searchPost: [],
-      post: [
-        {
-          title: '你好，世界！',
-          short_content: 'hi',
-          content: 'asdasdasda',
-          author: '',
-          date: ''
-        },
-        {
-          title: '測試貼文',
-          short_content: '山上有個小女孩，它叫做小花。',
-          content: '小花是一個很可愛的女孩，她有一個很可愛的小狗，它叫做小狗。',
-          author: '',
-          date: ''
-        },
-        {
-          title: '測試貼文',
-          short_content: '山上有個小女孩，它叫做小花。',
-          content: '小花是一個很可愛的女孩，她有一個很可愛的小狗，它叫做小狗。',
-          author: '',
-          date: ''
-        },
-        {
-          title: '測試貼文',
-          short_content: '山上有個小女孩，它叫做小花。',
-          content: '小花是一個很可愛的女孩，她有一個很可愛的小狗，它叫做小狗。',
-          author: '',
-          date: ''
-        },
-        {
-          title: '測試貼文',
-          short_content: '山上有個小女孩，它叫做小花。',
-          content: '小花是一個很可愛的女孩，她有一個很可愛的小狗，它叫做小狗。',
-          author: '',
-          date: ''
-        },
-        {
-          title: '測試貼文',
-          short_content: '山上有個小女孩，它叫做小花。',
-          content: '小花是一個很可愛的女孩，她有一個很可愛的小狗，它叫做小狗。',
-          author: '',
-          date: ''
-        },
-        {
-          title: '測試貼文',
-          short_content: '山上有個小女孩，它叫做小花。',
-          content: '小花是一個很可愛的女孩，她有一個很可愛的小狗，它叫做小狗。',
-          author: '',
-          date: ''
-        },
-        {
-          title: '測試貼文',
-          short_content: '山上有個小女孩，它叫做小花。',
-          content: '小花是一個很可愛的女孩，她有一個很可愛的小狗，它叫做小狗。',
-          author: '',
-          date: ''
-        },
-        {
-          title: '測試貼文',
-          short_content: '山上有個小女孩，它叫做小花。',
-          content: '小花是一個很可愛的女孩，她有一個很可愛的小狗，它叫做小狗。',
-          author: '',
-          date: ''
-        }
-      ]
+      post: json
     }
   },
   methods: {
     search() {
+      this.sortDate()
       this.searchPost = this.post.filter((post) => {
-        return post.title.includes(this.cacheSearch)
+        if (!post.title.includes(this.cacheSearch)) {
+          return post.short_content.includes(this.cacheSearch)
+        } else {
+          return post.title.includes(this.cacheSearch)
+        }
       })
+    },
+    sortDate() {
+      this.post.sort((a, b) => {
+        console.log(a.date.toLowerCase().charCodeAt(0))
+        return new Date(b.date) - new Date(a.date)
+      })
+    },
+    showPost(id) {
+      this.$refs.PostModal.showModal(id)
     }
   },
   watch: {
