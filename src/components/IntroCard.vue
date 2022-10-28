@@ -1,5 +1,5 @@
 <template>
-    <div class="row row-cols-1 g-4 " :class="row">
+    <div class="row row-cols-1 g-4 " :class="getRow()">
         <div class="col d-flex justify-content-center" v-for="(item, key) in data" :key="key">
             <div class="card" style="width: 18rem;" v-if="item.name">
                 <img :src="item.img" v-if="item.img" class="card-img-top" alt="圖片無法顯示" />
@@ -27,9 +27,14 @@ export default {
       default: () => []
     },
     row: {
-      type: String,
-      default: 'row-cols-md-2'
+      type: Number,
+      default: 2
     }
   },
+  methods: {
+    getRow() {
+      return 'row-cols-md-' + this.row
+    }
+  }
 }
 </script>

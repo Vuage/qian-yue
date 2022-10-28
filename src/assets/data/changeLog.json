@@ -1,5 +1,18 @@
 [
     {
+        "version": "1.7",
+        "name": "v1.7 正式版",
+        "closed": true,
+        "date": "2022/10/28",
+        "description": "零碎更新",
+        "// 新增誰更新的" : "",
+        "// 更新日誌和指令寫成同一個component": "",
+        "changes": [
+            "解決 Navbar CSS 透明度問題",
+            "解決 card row 問題"
+        ]
+    },
+    {
         "version": "1.6",
         "name": "v1.6 正式版",
         "closed": true,

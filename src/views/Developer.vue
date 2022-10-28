@@ -4,7 +4,7 @@
       <label for="searchDeveloper">搜尋開發者</label>
     </div>
     <br>
-    <IntroCard :data="searchData" :row="`row-cols-md-`+row"></IntroCard>
+    <IntroCard :data="searchData" :row="row"></IntroCard>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <nav ref="modal" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: #0000006b!important;">
+  <nav ref="modal" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: rgb(7 6 6 / 82%) !important;">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img :src="require('@/assets/icon.png')" alt="" width="30" class="d-inline-block align-text-top">

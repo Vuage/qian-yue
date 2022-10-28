@@ -1,5 +1,5 @@
 <template>
-  <IntroCard :data="data" :row="`row-cols-md-`+row"></IntroCard>
+  <IntroCard :data="data" :row="row"></IntroCard>
     <!-- <ul>
         <li v-for="(item, key) in data" :key="key">
             {{ item.name }} - {{ item.description }}
