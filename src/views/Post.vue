@@ -8,7 +8,7 @@
     <div class="col" v-for="(item, key) in searchPost" :key="key">
       <div class="card" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title text-dark">{{ item.title }}</h5>
+          <h5 class="card-title text-dark gap-2 d-md-block">{{ item.title }}</h5>
           <hr class="text-dark">
           <p class="text-dark">{{ item.short_content }}</p>
           <p class="text-dark alert alert-primary">

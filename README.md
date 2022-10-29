@@ -35,3 +35,5 @@
 ## 主要開發者
 
 [夏特稀](https://github.com/mmm25002500)、[yywbadm](https://github.com/yywbadm)
+
+[靈萌團隊開發](https://team.tershi.com)

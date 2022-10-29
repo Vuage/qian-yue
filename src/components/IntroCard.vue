@@ -6,7 +6,7 @@
                 <div class="card-body">
                     <h5 class="card-title text-info">{{ item.name }}</h5>
                     <p class="card-text text-dark">{{ item.description }}</p>
-                    <div class="btn-group">
+                    <div class="btn-group d-grid gap-2 d-md-block">
                         <a :href="item.link" target="_blank" v-if="item.link" class="btn btn-primary ">個人網站</a>
                         <a :href="item.yt" target="_blank" v-if="item.yt" class="btn btn-danger">YouTube</a>
                         <a :href="item.github" target="_blank" v-if="item.github" class="btn btn-dark">Github</a>
