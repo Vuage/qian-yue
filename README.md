@@ -37,3 +37,5 @@
 [夏特稀](https://github.com/mmm25002500)、[yywbadm](https://github.com/yywbadm)
 
 [靈萌團隊開發](https://team.tershi.com)
+
+[DISCORD](https://discord.gg/2FtxrKGHPd)
